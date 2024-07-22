@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-left: 105px;
+    margin-top: 2rem;
+}
+
+.container img {
+    border-radius: 12px;
+}
+
+.recipe-introduction h2 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.recipe-introduction p {
+    font-size: 20px;
+}
+
+.preparation-time h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.preparation-time span {
+    font-weight: bold;
+}
+
+.preparation-time li {
+    font-size: 20px;
+}
+
+.Ingredients-container {
+    font-size: 20px;
+}
+
+.container h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.instructions-container span {
+    font-weight: bold;
+    font-size: 20px
+}
+
+.instructions-container li {
+    font-size: 20px;
+}
+
