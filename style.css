@@ -1,21 +1,25 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 .container {
-    margin-left: 105px;
+    margin-right: 5rem;
+    margin-left: 5rem;
     margin-top: 2rem;
+    color: grey;
 }
 
 .container img {
     border-radius: 12px;
+    width: 100%;
 }
 
 .recipe-introduction h2 {
     font-weight: bold;
     font-size: 50px;
+    color: black;
 }
 
 .recipe-introduction p {
@@ -29,6 +33,7 @@ body {
 
 .preparation-time span {
     font-weight: bold;
+    color: #5D5956;
 }
 
 .preparation-time li {
@@ -42,14 +47,54 @@ body {
 .container h3 {
     font-weight: 600;
     font-size: 24px;
+    color: #7B4334;
 }
 
 .instructions-container span {
     font-weight: bold;
-    font-size: 20px
+    font-size: 20px;
+    color: #5D5956;
 }
 
 .instructions-container li {
     font-size: 20px;
 }
 
+.preparation-time {
+    background-color: rgb(251, 230, 251);
+    border-radius: 12px;
+    padding: 1rem 1rem 1rem 3rem;
+}
+
+.preparation-time h4 {
+    color: #6A2A45;
+}
+
+.preparation-time ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+table {
+    font-size: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    border-bottom: 1px solid gray;
+}
+
+table td {
+    padding: 10px;
+}
+
+table tr td:nth-child(2) {
+    color: #7B4334;
+    font-weight: 700;
+}
+
+.nutrition-container {
+    font-size: 20px;
+}
