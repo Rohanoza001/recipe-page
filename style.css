@@ -9,21 +9,27 @@
     margin-left: 5rem;
     margin-top: 2rem;
     color: grey;
+    display: flex;
+    flex-direction: column;
+    column-gap: 2rem;
 }
 
 .container img {
     border-radius: 12px;
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 .recipe-introduction h2 {
     font-weight: bold;
     font-size: 50px;
     color: black;
+    margin-bottom: 1rem;
 }
 
 .recipe-introduction p {
     font-size: 20px;
+    margin-bottom: 2rem;
 }
 
 .preparation-time h4 {
@@ -42,12 +48,26 @@
 
 .Ingredients-container {
     font-size: 20px;
+    margin-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Ingredients-container ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
 }
 
 .container h3 {
     font-weight: 600;
     font-size: 24px;
     color: #7B4334;
+}
+
+.instructions-container {
+    margin-bottom: 2rem;
 }
 
 .instructions-container span {
@@ -60,10 +80,22 @@
     font-size: 20px;
 }
 
+.instructions-container ol {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
 .preparation-time {
     background-color: rgb(251, 230, 251);
     border-radius: 12px;
     padding: 1rem 1rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .preparation-time h4 {
@@ -97,4 +129,70 @@ table tr td:nth-child(2) {
 
 .nutrition-container {
     font-size: 20px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 980px) {
+    .container {
+        margin: 0px;
+    }
+
+    .container img {
+        border-radius: 0px;
+    }
+
+    .Ingredients-container,
+    .instructions-container,
+    .nutrition-container,
+    .preparation-time,
+    .recipe-introduction {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+    .container {
+        margin: 0px;
+    }
+
+    .container img {
+        margin: 0px;
+        border-radius: 0px;
+        margin-bottom: 2rem;
+    }
+
+    .recipe-introduction h2 {
+        font-size: 35px;
+    }
+
+    .Ingredients-container,
+    .instructions-container,
+    .nutrition-container,
+    .preparation-time,
+    .recipe-introduction {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .recipe-introduction p,
+    .preparation-time ul li,
+    .instructions-container ol li,
+    table tr td,
+    .nutrition-container p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .Ingredients-container ul {
+        row-gap: 4px;
+        font-size: 16px;
+    }
+
+
 }
